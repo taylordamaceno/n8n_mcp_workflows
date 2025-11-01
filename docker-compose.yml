@@ -1,0 +1,18 @@
+services:
+  n8n:
+    image: docker.n8n.io/n8nio/n8n:latest
+    restart: unless-stopped
+    env_file:
+      - .env
+    ports:
+      - "0.0.0.0:5678:5678"
+    volumes:
+      - /home/taylao/mcpn8n/local_n8n/data:/home/node/.n8n
+      - /home/taylao/mcpn8n/local_n8n/files:/files
+    environment:
+      - N8N_DIAGNOSTICS_ENABLED=false
+      - N8N_HIRING_BANNER_ENABLED=false
+      - N8N_ENFORCE_SETTINGS_FILE_PERMISSIONS=true
+      - DB_SQLITE_POOL_SIZE=4
+      - N8N_RUNNERS_ENABLED=true
+      - N8N_BLOCK_ENV_ACCESS_IN_NODE=false
