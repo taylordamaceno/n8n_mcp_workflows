@@ -7,6 +7,7 @@ Este repositorio centraliza a configuracao do Model Context Protocol (MCP) para 
 - Funciona como uma colecao de scripts, manifestos MCP e regras compartilhadas voltadas ao uso do n8n via Cursor e Codex.
 - Os arquivos foram pensados para serem clonados e adaptados rapidamente por qualquer membro da equipe.
 - Todo o conteudo evita expor segredos reais; mantenha a mesma abordagem ao contribuir.
+- Permite criar e orquestrar workflows do n8n a partir de prompts em linguagem natural enviados pelo Cursor ou pelo Codex.
 
 ## Requisitos minimos
 - Cursor com suporte a MCP habilitado.
